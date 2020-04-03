@@ -1,0 +1,14 @@
+prefix=/Users/surecn/tool/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/surecn/tool/ffmpeg/lib
+includedir=/Users/surecn/tool/ffmpeg/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.5.100
+Requires: 
+Requires.private: libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}
